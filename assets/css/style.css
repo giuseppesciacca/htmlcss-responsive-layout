@@ -19,9 +19,16 @@ html {
     --lighter: rgba(255, 255, 255, 1);
 }
 
+#app_main #planning,
+#app_main #features,
+#app_main #trasparent_pricing {
+    background-color: var(--primary);
+}
+
 .container {
     width: 90%;
     margin: auto;
+    max-width: 1140px;
 }
 
 .row {
@@ -67,7 +74,7 @@ li {
 
 .btn {
     border-radius: 2rem;
-    padding: 0.5rem;
+    padding: 0.75rem;
     display: inline-block;
 }
 
@@ -79,10 +86,15 @@ li {
 .btn_blue {
     background-color: var(--secondary);
     color: white;
+    font-weight: bold;
 }
 
 img {
     max-width: 100%;
+}
+
+.text_left {
+    text-align: left !important;
 }
 
 /* #endregion COMMON and Utilities */
@@ -104,9 +116,8 @@ img {
 }
 
 #app_header .container a {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     color: white;
-    font-size: 1.5rem;
 }
 
 #app_header .container .btn_white {
@@ -120,39 +131,48 @@ img {
 /* #endregion HEADER */
 
 /* #region MAIN */
-#app_main #demo .row {
-    margin: 1.5rem 0;
+
+/* #region #demo */
+#app_main #demo {
+    padding-bottom: 4rem;
 }
 
-#app_main #demo [class^=col] {
+#app_main #demo .row {
+    margin: 1.5rem -1rem;
+}
+
+#app_main #demo .card {
     background-color: var(--lightblue);
     border-radius: 2rem;
-    margin: 0.5rem 0;
+    padding: 1rem;
+    height: 100%;
 }
 
 #app_main #demo h2 {
     color: var(--secondary);
+    padding: 0.5rem 2rem;
     text-align: center;
-    padding: 0.5rem 0 1.5rem 0
 }
 
 #app_main #demo p {
     color: var(--dark);
     font-weight: 600;
     line-height: 1.75rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
 }
 
 #app_main #demo .btn_blue {
     display: block;
-    width: 40%;
+    width: 60%;
     text-align: center;
-    margin: 3rem auto 0 auto;
+    margin: 2rem 2rem 0 2rem;
 }
 
 #app_main #demo img {
     position: relative;
     left: 0;
-    top: 68px;
+    top: 60px;
 }
 
 #app_main #demo .fa-solid {
@@ -161,11 +181,12 @@ img {
     display: block;
 }
 
+/* #endregion #demo */
 
-#app_main #planning,
-#app_main #benefits,
-#app_main #trasparent_pricing {
-    background-color: var(--primary);
+/* #region #planning */
+
+#app_main #planning {
+    padding: 4rem 0;
 }
 
 #app_main #planning .image {
@@ -178,7 +199,8 @@ img {
 }
 
 #app_main #planning h2 {
-    padding: 2rem 0;
+    padding: 3rem 0;
+    font-size: 2.25rem;
 }
 
 #app_main #planning p {
@@ -186,9 +208,10 @@ img {
     padding-bottom: 2rem;
 }
 
-#app_main #planning .row div:last-child {
+#app_main #planning .row div:last-child .card {
     background-color: var(--lighter);
     border-radius: 3rem;
+    padding: 2rem 1rem;
 }
 
 #app_main #planning .row div:last-child h2,
@@ -213,60 +236,71 @@ img {
     margin: 1rem auto;
 }
 
+/* #endregion #planning */
 
-#app_main #benefits [class^=col] {
-    background-color: var(--lighter);
-}
-
-
-/* testimonials section */
-#app_main #partners {
+/* #region #testimonials */
+#app_main #testimonials {
     padding: 4rem 0;
 }
 
-#app_main #partners h5 {
+#app_main #testimonials h5 {
     font-weight: 300;
 }
 
-#app_main #partners h5,
-#app_main #partners h3,
-#app_main #partners p {
+#app_main #testimonials h5,
+#app_main #testimonials h3,
+#app_main #testimonials p {
     text-align: center;
     margin: 1rem 0;
 }
 
-#app_main #partners h3 {
+#app_main #testimonials p {
+    line-height: 1.5rem;
+}
+
+#app_main #testimonials h3 {
     color: var(--primary);
     font-size: 2rem;
 }
 
-#app_main #partners .card {
+#app_main #testimonials .card {
     border-radius: 2rem;
     background-color: var(--primary);
     padding: 1rem;
 }
 
-#app_main #partners .image {
+#app_main #testimonials .image {
     text-align: center;
 }
 
-#app_main #partners .image img {
+#app_main #testimonials .image img {
     border-radius: 50%;
     object-fit: cover;
     aspect-ratio: 1/1;
     width: 40%;
 }
 
-#app_main #partners .bio p {
+#app_main #testimonials .bio p {
     color: var(--lighter);
     line-height: 1.25rem;
 }
 
-#app_main #partners .bio h4 {
+#app_main #testimonials .bio h4 {
     color: var(--lighter);
     text-align: center;
     margin-top: 2rem;
 }
+
+/* #endregion testimonials */
+
+/* #region #features */
+
+#app_main #features [class^=col] {
+    background-color: var(--lighter);
+}
+
+/* #endregion #features */
+
 
 /* #endregion MAIN */
 
@@ -315,6 +349,10 @@ img {
         width: calc(100% / 12 * 4);
     }
 
+    .lg_col_5 {
+        width: calc(100% / 12 * 5);
+    }
+
     .lg_col_6 {
         width: calc(100% / 12 * 6);
     }
@@ -327,6 +365,7 @@ img {
         width: 100%;
     }
 
+    /* header */
     #app_header .container ul {
         display: flex;
     }
@@ -335,21 +374,45 @@ img {
         display: none;
     }
 
+    /* /header */
+
+    /* main */
     #app_main #planning .row {
         justify-content: center;
         gap: 5rem;
         padding: 3rem;
     }
 
-    #app_main #partners .card {
-        display: flex;
-        align-items: center;
+    #app_main #planning .row .strategic_pl h2 {
+        padding-top: 10rem;
     }
 
-    #app_main #partners .bio p,
-    #app_main #partners .bio h4 {
+    #app_main #planning .row .app_develop .card {
+        position: relative;
+        top: 110px;
+        left: 0;
+    }
+
+    #app_main #planning .row .app_develop img {
+        width: 60%;
+    }
+
+
+
+
+    #app_main #testimonials .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #app_main #testimonials .bio p,
+    #app_main #testimonials .bio h4 {
         text-align: left;
     }
+
+    /* /main */
+
 
 
 }
