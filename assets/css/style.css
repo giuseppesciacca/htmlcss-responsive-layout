@@ -58,14 +58,15 @@
 
 /* #endregion HEADER */
 
-/* #region main */
+/* #region MAIN */
 #app_main #demo [class^=col] {
     background-color: var(--lightblue);
 }
 
 #app_main #planning,
 #app_main #partners [class^=col],
-#app_main #benefits {
+#app_main #benefits,
+#app_main #trasparent_pricing {
     background-color: var(--primary);
 }
 
@@ -73,9 +74,15 @@
     background-color: var(--lighter);
 }
 
-/* #endregion main */
+/* #endregion MAIN */
+
+/* #region FOOTER */
+#app_footer {
+    background-color: var(--dark);
+}
 
 
+/* #endregion FOOTER */
 
 /* #region DEBUG */
 .debug * {
