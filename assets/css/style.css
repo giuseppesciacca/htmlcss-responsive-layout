@@ -89,6 +89,12 @@ li {
     font-weight: bold;
 }
 
+.btn_purple {
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+}
+
 img {
     max-width: 100%;
 }
@@ -294,9 +300,42 @@ img {
 /* #endregion testimonials */
 
 /* #region #features */
+#app_main #features {
+    padding: 2rem 0;
+}
 
-#app_main #features [class^=col] {
+#app_main #features .container>h2 {
+    color: var(--lighter);
+    padding: 4rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#app_main #features .card {
     background-color: var(--lighter);
+    height: 100%;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+#app_main #features .card h2,
+#app_main #features .card h3 {
+    color: var(--primary);
+}
+
+#app_main #features .card h2 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
+#app_main #features .card p {
+    color: var(--dark);
+    line-height: 1.75rem;
+    padding: 2rem 0 2rem 0;
+}
+
+#app_main #features .card .btn_purple {
+    padding: 1rem 4rem;
 }
 
 /* #endregion #features */
