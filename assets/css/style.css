@@ -63,10 +63,10 @@
     background-color: var(--lightblue);
 }
 
-#app_main #planning {
+#app_main #planning,
+#app_main #partners [class^=col] {
     background-color: var(--primary);
 }
-
 
 /* #endregion main */
 
