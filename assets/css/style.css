@@ -163,7 +163,6 @@ img {
 
 
 #app_main #planning,
-#app_main #partners [class^=col],
 #app_main #benefits,
 #app_main #trasparent_pricing {
     background-color: var(--primary);
@@ -220,18 +219,54 @@ img {
 }
 
 
-/* partners section */
+/* testimonials section */
+#app_main #partners {
+    padding: 4rem 0;
+}
+
+#app_main #partners h5 {
+    font-weight: 300;
+}
+
 #app_main #partners h5,
 #app_main #partners h3,
 #app_main #partners p {
     text-align: center;
+    margin: 1rem 0;
 }
 
 #app_main #partners h3 {
     color: var(--primary);
+    font-size: 2rem;
 }
 
+#app_main #partners .card {
+    border-radius: 2rem;
+    background-color: var(--primary);
+    padding: 1rem;
+}
 
+#app_main #partners .image {
+    text-align: center;
+}
+
+#app_main #partners .image img {
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 40%;
+}
+
+#app_main #partners .bio p {
+    color: var(--lighter);
+    line-height: 1.25rem;
+}
+
+#app_main #partners .bio h4 {
+    color: var(--lighter);
+    text-align: center;
+    margin-top: 2rem;
+}
 
 /* #endregion MAIN */
 
@@ -305,5 +340,16 @@ img {
         gap: 5rem;
         padding: 3rem;
     }
+
+    #app_main #partners .card {
+        display: flex;
+        align-items: center;
+    }
+
+    #app_main #partners .bio p,
+    #app_main #partners .bio h4 {
+        text-align: left;
+    }
+
 
 }
