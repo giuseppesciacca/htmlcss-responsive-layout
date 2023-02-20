@@ -10,7 +10,6 @@ html {
     font-family: 'PT Sans', sans-serif;
 }
 
-/* Color palette */
 :root {
     --primary: rgba(151, 146, 228, 1);
     --secondary: rgba(0, 132, 253, 1);
@@ -65,10 +64,21 @@ li {
 .btn {
     border-radius: 2rem;
     padding: 0.5rem;
+    display: inline-block;
 }
 
 .btn_white {
-    background-color: white;
+    background-color: var(--lighter);
+    color: black;
+}
+
+.btn_blue {
+    background-color: var(--secondary);
+    color: white;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* #endregion COMMON and Utilities */
@@ -86,6 +96,7 @@ li {
 
 #app_header .container ul {
     display: none;
+    align-items: center;
 }
 
 #app_header .container a {
@@ -105,9 +116,34 @@ li {
 /* #endregion HEADER */
 
 /* #region MAIN */
+#app_main #demo .row {
+    margin: 1.5rem 0;
+}
+
+#app_main #demo h2 {
+    color: var(--secondary);
+    text-align: center;
+    padding: 0.5rem 0 1.5rem 0
+}
+
+#app_main #demo p {
+    color: var(--dark);
+    font-weight: 600;
+    line-height: 1.75rem;
+}
+
 #app_main #demo [class^=col] {
     background-color: var(--lightblue);
+    border-radius: 2rem;
+    margin: 0.5rem 0;
 }
+
+#app_main #demo .fa-solid {
+    text-align: center;
+    color: var(--secondary);
+    display: block;
+}
+
 
 #app_main #planning,
 #app_main #partners [class^=col],
@@ -141,8 +177,6 @@ li {
 }
 
 /* #endregion DEBUG */
-
-
 
 @media screen and (min-width: 768px) {
 
