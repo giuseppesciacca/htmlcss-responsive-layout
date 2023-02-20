@@ -64,8 +64,13 @@
 }
 
 #app_main #planning,
-#app_main #partners [class^=col] {
+#app_main #partners [class^=col],
+#app_main #benefits {
     background-color: var(--primary);
+}
+
+#app_main #benefits [class^=col] {
+    background-color: var(--lighter);
 }
 
 /* #endregion main */
