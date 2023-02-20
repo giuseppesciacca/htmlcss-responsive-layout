@@ -49,6 +49,10 @@ html {
     width: 100%;
 }
 
+.pb_0 {
+    padding-bottom: 0;
+}
+
 .d_flex {
     display: flex;
 }
@@ -120,6 +124,12 @@ img {
     margin: 1.5rem 0;
 }
 
+#app_main #demo [class^=col] {
+    background-color: var(--lightblue);
+    border-radius: 2rem;
+    margin: 0.5rem 0;
+}
+
 #app_main #demo h2 {
     color: var(--secondary);
     text-align: center;
@@ -132,10 +142,17 @@ img {
     line-height: 1.75rem;
 }
 
-#app_main #demo [class^=col] {
-    background-color: var(--lightblue);
-    border-radius: 2rem;
-    margin: 0.5rem 0;
+#app_main #demo .btn_blue {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: 3rem auto 0 auto;
+}
+
+#app_main #demo img {
+    position: relative;
+    left: 0;
+    top: 68px;
 }
 
 #app_main #demo .fa-solid {
@@ -152,9 +169,69 @@ img {
     background-color: var(--primary);
 }
 
+#app_main #planning .image {
+    text-align: center;
+}
+
+#app_main #planning h2,
+#app_main #planning p {
+    color: var(--lighter);
+}
+
+#app_main #planning h2 {
+    padding: 2rem 0;
+}
+
+#app_main #planning p {
+    line-height: 1.75rem;
+    padding-bottom: 2rem;
+}
+
+#app_main #planning .row div:last-child {
+    background-color: var(--lighter);
+    border-radius: 3rem;
+}
+
+#app_main #planning .row div:last-child h2,
+#app_main #planning .row div:last-child p {
+    color: black;
+    text-align: center;
+}
+
+#app_main #planning .row div:last-child p {
+    font-style: italic;
+}
+
+#app_main #planning .row div:last-child a {
+    color: var(--dark);
+    display: block;
+    background-color: var(--primary);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+
 #app_main #benefits [class^=col] {
     background-color: var(--lighter);
 }
+
+
+/* partners section */
+#app_main #partners h5,
+#app_main #partners h3,
+#app_main #partners p {
+    text-align: center;
+}
+
+#app_main #partners h3 {
+    color: var(--primary);
+}
+
+
 
 /* #endregion MAIN */
 
@@ -195,7 +272,6 @@ img {
     .md_col_12 {
         width: 100%;
     }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -223,4 +299,11 @@ img {
     #app_header .container i {
         display: none;
     }
+
+    #app_main #planning .row {
+        justify-content: center;
+        gap: 5rem;
+        padding: 3rem;
+    }
+
 }
