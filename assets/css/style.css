@@ -6,6 +6,10 @@
 
 /* #region COMMON and Utilities */
 
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
 /* Color palette */
 :root {
     --primary: rgba(151, 146, 228, 1);
@@ -46,15 +50,57 @@
     width: 100%;
 }
 
+.d_flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.btn_white {
+    background-color: white;
+}
 
 /* #endregion COMMON and Utilities */
 
 /* #region HEADER */
 #app_header {
-    height: 70px;
     background-color: var(--secondary);
 }
 
+#app_header .container {
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#app_header .container ul {
+    display: none;
+}
+
+#app_header .container a {
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#app_header .container .btn_white {
+    color: black;
+}
+
+#app_header .container i {
+    color: white;
+}
 
 /* #endregion HEADER */
 
@@ -98,7 +144,7 @@
 
 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 
     .md_col_4 {
         width: calc(100% / 12 * 4);
@@ -118,7 +164,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
 
     .lg_col_4 {
         width: calc(100% / 12 * 4);
@@ -134,5 +180,13 @@
 
     .lg_col_12 {
         width: 100%;
+    }
+
+    #app_header .container ul {
+        display: flex;
+    }
+
+    #app_header .container i {
+        display: none;
     }
 }
