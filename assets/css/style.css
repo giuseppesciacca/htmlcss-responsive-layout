@@ -21,7 +21,7 @@ html {
 
 #app_main #planning,
 #app_main #features,
-#app_main #trasparent_pricing {
+#app_main #get_started {
     background-color: var(--primary);
 }
 
@@ -385,6 +385,60 @@ img {
 }
 
 /* #endregion #about */
+
+/* #region #get_started */
+#app_main #get_started {
+    padding: 3rem 0;
+    text-align: center;
+    color: var(--lighter);
+}
+
+#app_main #get_started h6 {
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: lightgrey;
+}
+
+#app_main #get_started h3 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#app_main #get_started h2 {
+    color: var(--lightyellow);
+    padding-bottom: 1rem;
+    font-size: 3.5rem;
+}
+
+#app_main #get_started p {
+    color: var(--lighter);
+    line-height: 1.75rem;
+    padding-bottom: 1rem;
+}
+
+#app_main #get_started .btn_white {
+    color: var(--primary);
+    font-weight: bold;
+    width: 50%;
+}
+
+#app_main #get_started p#copyright {
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+#app_main #get_started p#copyright i.fa-circle {
+    scale: 0.3;
+}
+
+#app_main #get_started p#copyright a {
+    color: var(--lighter);
+    text-decoration: underline;
+}
+
+
+/* #endregion #get_started */
 /* #endregion MAIN */
 
 /* #region FOOTER */
