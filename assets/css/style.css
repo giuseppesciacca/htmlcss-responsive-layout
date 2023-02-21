@@ -72,6 +72,10 @@ li {
     list-style: none;
 }
 
+p {
+    color: var(--dark);
+}
+
 .btn {
     border-radius: 2rem;
     padding: 0.75rem;
@@ -340,7 +344,47 @@ img {
 
 /* #endregion #features */
 
+/* #region #about */
+#app_main #about {
+    padding: 4rem 0;
+}
 
+#app_main #about h2 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+#app_main #about p {
+    line-height: 1.75rem;
+    padding-bottom: 2rem;
+}
+
+#app_main #about .image {
+    position: relative;
+}
+
+#app_main #about .image img {
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 40%;
+}
+
+#app_main #about .image i {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    color: var(--primary);
+}
+
+#app_main #about p.quote {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* #endregion #about */
 /* #endregion MAIN */
 
 /* #region FOOTER */
