@@ -521,10 +521,6 @@ img {
         width: calc(100% / 12 * 10);
     }
 
-    .md_col_12 {
-        width: 100%;
-    }
-
     #app_main #testimonials .card {
         display: flex;
         align-items: center;
@@ -554,14 +550,6 @@ img {
 
     .lg_col_6 {
         width: calc(100% / 12 * 6);
-    }
-
-    .lg_col_8 {
-        width: calc(100% / 12 * 8);
-    }
-
-    .lg_col_12 {
-        width: 100%;
     }
 
     /* header */
