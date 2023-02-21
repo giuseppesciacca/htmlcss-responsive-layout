@@ -31,6 +31,11 @@ html {
     max-width: 1140px;
 }
 
+.container_small {
+    max-width: 480px;
+    margin: auto;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -420,7 +425,6 @@ img {
 #app_main #get_started .btn_white {
     color: var(--primary);
     font-weight: bold;
-    width: 50%;
 }
 
 #app_main #get_started p#copyright {
@@ -444,6 +448,21 @@ img {
 /* #region FOOTER */
 #app_footer {
     background-color: var(--dark);
+    padding: 2rem;
+    text-align: center;
+}
+
+#app_footer p {
+    color: var(--lighter);
+}
+
+#app_footer p:first-child{
+    padding-bottom: 4rem;
+}
+
+#app_footer a {
+    color: var(--primary);
+    text-decoration: underline;
 }
 
 
