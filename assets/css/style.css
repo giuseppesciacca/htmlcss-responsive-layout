@@ -399,7 +399,7 @@ img {
 #app_main #about .image i {
     position: absolute;
     top: 0;
-    left: 140px;
+    left: 45%;
     color: var(--primary);
 }
 
